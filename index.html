@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Real Guide to Kidney Health &amp; Spotting Supplement Scams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ocean-deep: #0B3D57;
+    --ocean: #0E7490;
+    --turquoise: #0F9C93;
+    --aqua: #4FD1C5;
+    --seafoam: #CFFAF3;
+    --seafoam-pale: #EFFDFB;
+    --ink: #0E2A33;
+    --ink-soft: #3C5A63;
+    --paper: #FFFFFF;
+    --page-bg: #F5FCFB;
+    --line: rgba(14, 116, 144, 0.16);
+    --shadow: 0 18px 40px rgba(11, 61, 87, 0.10);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 12px;
+    --max: 760px;
+    color-scheme: light;
+  }
+
+  html.dark {
+    --ink: #E7F7F4;
+    --ink-soft: #A9CBC9;
+    --paper: #0E2E3A;
+    --page-bg: #082530;
+    --seafoam: #114A4A;
+    --seafoam-pale: #0F3B41;
+    --line: rgba(79, 209, 197, 0.22);
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { overflow-x: hidden; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.35s ease, color 0.35s ease;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  a { color: var(--ocean); }
+  html.dark a { color: var(--aqua); }
+
+  img, svg { max-width: 100%; display: block; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    padding-top: max(14px, env(safe-area-inset-top));
+    padding-bottom: 14px;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    transition: background 0.35s ease, border-color 0.35s ease;
+  }
+  html.dark .site-header { background: rgba(8, 37, 48, 0.82); }
+
+  .header-row {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .brand-mark {
+    width: 30px; height: 30px; flex: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--turquoise), var(--ocean));
+  }
+
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .theme-toggle:hover { box-shadow: var(--shadow); }
+  .theme-toggle:active { transform: scale(0.97); }
+  .theme-toggle svg { width: 15px; height: 15px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    text-align: center;
+    padding: 56px 0 0;
+  }
+  .hero .kicker {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--turquoise);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: clamp(2.1rem, 7vw, 3.1rem);
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--ocean);
+  }
+  html.dark .hero h1 em { color: var(--aqua); }
+  .hero p {
+    max-width: 46ch;
+    margin: 20px auto 0;
+    color: var(--ink-soft);
+    font-size: 1.08rem;
+  }
+  .hero-meta {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .pill {
+    border: 1px solid var(--line);
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--paper);
+  }
+
+  .wave {
+    width: 100%;
+    height: auto;
+    margin-top: 44px;
+    display: block;
+  }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: 54px 0; }
+  .seam { background: var(--seafoam-pale); }
+
+  .section-head { text-align: center; margin-bottom: 34px; }
+  .section-head h2 {
+    font-size: clamp(1.6rem, 5vw, 2.1rem);
+  }
+  .section-head p {
+    color: var(--ink-soft);
+    max-width: 50ch;
+    margin: 12px auto 0;
+  }
+
+  /* Callout / disclaimer */
+  .callout {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 30px 28px;
+    text-align: center;
+  }
+  .callout .icon {
+    width: 44px; height: 44px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--aqua), var(--ocean));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .callout .icon svg { width: 22px; height: 22px; stroke: white; }
+  .callout h3 { font-size: 1.25rem; margin-bottom: 10px; }
+  .callout p { color: var(--ink-soft); max-width: 52ch; margin: 0 auto; }
+  .callout p + p { margin-top: 10px; }
+
+  /* Fact cards */
+  .fact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .fact-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 22px 22px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .fact-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .fact-card p { color: var(--ink-soft); font-size: 0.97rem; margin: 0; }
+
+  /* Checklist (left-aligned always, per mobile list rule) */
+  .checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: grid;
+    gap: 10px;
+  }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+  .checklist input[type="checkbox"] {
+    margin-top: 3px;
+    width: 18px; height: 18px;
+    accent-color: var(--turquoise);
+    flex: none;
+  }
+  .checklist span { color: var(--ink); }
+  .checklist .sub { display: block; color: var(--ink-soft); font-size: 0.88rem; margin-top: 2px; }
+
+  .note-line {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    margin-top: 18px;
+  }
+
+  /* Action plan steps */
+  .steps { display: grid; gap: 18px; }
+  .step {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+    box-shadow: var(--shadow);
+    text-align: left;
+  }
+  .step-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .step-num {
+    flex: none;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--seafoam);
+    color: var(--ocean-deep);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.05rem;
+  }
+  html.dark .step-num { background: var(--seafoam); color: var(--aqua); }
+  .step h3 { font-size: 1.15rem; }
+  .step p { color: var(--ink-soft); margin: 0 0 10px; }
+  .step ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
+  .step ul li { margin-bottom: 4px; }
+
+  /* Red flag quote cards */
+  .flag-grid {
+    display: grid;
+    gap: 12px;
+  }
+  .flag-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--ocean);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    text-align: left;
+  }
+  .flag-card .flag-phrase {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ocean-deep);
+  }
+  html.dark .flag-card .flag-phrase { color: var(--aqua); }
+  .flag-card p { margin: 6px 0 0; color: var(--ink-soft); font-size: 0.93rem; }
+
+  /* Urgent box */
+  .urgent {
+    background: linear-gradient(160deg, var(--ocean-deep), var(--ocean));
+    color: #F2FDFC;
+    border-radius: var(--radius-lg);
+    padding: 30px 26px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .urgent h3 { color: #FFFFFF; font-size: 1.3rem; margin-bottom: 10px; }
+  .urgent p { color: rgba(242, 253, 252, 0.88); max-width: 52ch; margin: 0 auto 16px; }
+  .urgent ul {
+    list-style: none; padding: 0; margin: 0 0 16px;
+    display: grid; gap: 8px;
+    text-align: left;
+    max-width: 420px;
+    margin-left: auto; margin-right: auto;
+  }
+  .urgent ul li {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.93rem;
+  }
+  .urgent .small { font-size: 0.85rem; color: rgba(242, 253, 252, 0.75); margin: 0; }
+
+  /* Footer */
+  footer {
+    padding: 46px 0 calc(40px + env(safe-area-inset-bottom));
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+  footer h4 { font-size: 1rem; margin-bottom: 12px; }
+  footer ul { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 8px; font-size: 0.9rem; }
+  footer .fine { color: var(--ink-soft); font-size: 0.82rem; max-width: 52ch; margin: 0 auto; }
+
+  /* ---------- Tablet / desktop ---------- */
+  @media (min-width: 700px) {
+    body { font-size: 18px; }
+    .fact-grid { grid-template-columns: repeat(3, 1fr); }
+    .hero p { font-size: 1.15rem; }
+    .step { padding: 28px 30px; }
+    .callout { padding: 36px 44px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Kidney Health Guide</div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <span id="toggleLabel">Dark mode</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <p class="kicker">A plain-language health guide</p>
+    <h1>Take care of your kidneys, <em>not the ad's word for it</em></h1>
+    <p>If you've been noticing symptoms, worrying about your risk, or just saw a video online promising a "miracle" fix — here's what's actually proven to help, straight from kidney doctors and public health agencies, plus how to protect yourself from health misinformation.</p>
+    <div class="hero-meta">
+      <span class="pill">8-step action plan</span>
+      <span class="pill">Warning signs checklist</span>
+      <span class="pill">Supplement scam checklist</span>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path fill="var(--seafoam-pale)" d="M0,64 C240,110 480,10 720,40 C960,70 1200,120 1440,64 L1440,120 L0,120 Z"/>
+  </svg>
+
+  <section class="block seam">
+    <div class="wrap">
+      <div class="callout">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <h3>Before you read on</h3>
+        <p>This guide explains what's generally recommended for kidney health and how to spot misleading health marketing. It isn't a diagnosis and it isn't personal medical advice.</p>
+        <p>If you have symptoms or risk factors, the single most useful thing on this page is the reminder to get tested — a simple blood and urine test tells your doctor far more than any symptom checklist can.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="basics">
+    <div class="section-head">
+      <h2>What your kidneys actually do</h2>
+      <p>Two fist-sized organs, doing more than most people realize — which is why it's easy to miss when something's off.</p>
+    </div>
+    <div class="fact-grid">
+      <div class="fact-card">
+        <h3>Filter your blood</h3>
+        <p>They clear waste and extra fluid from your bloodstream and turn it into urine, day and night.</p>
+      </div>
+      <div class="fact-card">
+        <h3>Balance your body</h3>
+        <p>They help control blood pressure, keep minerals like potassium and phosphorus in balance, and support bone health.</p>
+      </div>
+      <div class="fact-card">
+        <h3>Make red blood cells</h3>
+        <p>They signal your body to produce red blood cells — which is why kidney problems can lead to fatigue and anemia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block seam" id="signs">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Warning signs worth paying attention to</h2>
+        <p>Early kidney disease often has no symptoms at all — that's exactly why it's called a "silent" condition. If you notice any of these, it's worth a conversation with your doctor, not a guess.</p>
+      </div>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s1"><label for="s1"><span>Needing to urinate much more or less often than usual<span class="sub">Including waking up multiple times a night to go.</span></span></label></li>
+        <li><input type="checkbox" id="s2"><label for="s2"><span>Foamy or bubbly urine<span class="sub">Can be a sign of protein leaking into your urine.</span></span></label></li>
+        <li><input type="checkbox" id="s3"><label for="s3"><span>Swelling in your hands, feet, ankles, or around your eyes<span class="sub">A sign your body is holding on to extra fluid.</span></span></label></li>
+        <li><input type="checkbox" id="s4"><label for="s4"><span>Ongoing tiredness or weakness<span class="sub">Not everyday tiredness — more like constantly dragging, even after rest.</span></span></label></li>
+        <li><input type="checkbox" id="s5"><label for="s5"><span>Dry, itchy skin<span class="sub">Can point to a mineral imbalance in the blood.</span></span></label></li>
+        <li><input type="checkbox" id="s6"><label for="s6"><span>Trouble concentrating, trouble sleeping, or muscle cramps</span></label></li>
+        <li><input type="checkbox" id="s7"><label for="s7"><span>Nausea, loss of appetite, or a metallic taste</span></label></li>
+        <li><input type="checkbox" id="s8"><label for="s8"><span>High blood pressure that's new or hard to control</span></label></li>
+      </ul>
+      <p class="note-line">Checking a box here isn't a diagnosis — it's a reason to book a blood and urine test. Both are quick, common, and the only reliable way to know what's going on.</p>
+    </div>
+  </section>
+
+  <section class="block wrap" id="plan">
+    <div class="section-head">
+      <h2>Your kidney health action plan</h2>
+      <p>Eight things doctors and kidney organizations consistently point to — in the order that tends to matter most.</p>
+    </div>
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">1</span><h3>Get the two simple tests</h3></div>
+        <p>A blood test (eGFR, which estimates how well your kidneys filter) and a urine test (uACR, which checks for protein) are the only real way to know your kidney health — symptoms alone won't tell you.</p>
+        <ul>
+          <li>Ask for both at your next check-up, especially with diabetes, high blood pressure, heart disease, or a family history of kidney disease</li>
+          <li>If you're at higher risk, aim for yearly testing</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">2</span><h3>Get blood pressure and blood sugar into your target range</h3></div>
+        <p>Diabetes and high blood pressure are the two leading causes of kidney damage in adults — managing them is the single biggest lever you have.</p>
+        <ul>
+          <li>Ask your doctor what your personal targets should be</li>
+          <li>Home blood pressure monitoring can help you and your doctor catch problems early</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">3</span><h3>Be "water-wise"</h3></div>
+        <p>Water helps your kidneys clear waste and keeps blood flowing freely to them. But more isn't automatically better, especially if you already have kidney or heart problems.</p>
+        <ul>
+          <li>Ask your doctor or dietitian for a personal daily target instead of guessing</li>
+          <li>Drink more around exercise and in hot or humid weather</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">4</span><h3>Eat with your kidneys in mind</h3></div>
+        <p>There's no single "kidney diet" that fits everyone — it depends on your health and, if you have kidney disease, its stage. But a few habits help almost everyone.</p>
+        <ul>
+          <li>Read labels and watch for hidden sodium and added sugar</li>
+          <li>Cook from fresh ingredients more often than packaged or fast food</li>
+          <li>Ask about seeing a kidney dietitian if you have any diagnosed kidney condition</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">5</span><h3>Move most days</h3></div>
+        <p>Regular activity helps manage blood pressure, blood sugar, weight, and stress — all of which protect your kidneys indirectly.</p>
+        <ul>
+          <li>It doesn't need to be intense — brisk walking counts</li>
+          <li>Ask your doctor before starting anything new if you have an existing condition</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">6</span><h3>Use over-the-counter pain relievers carefully</h3></div>
+        <p>NSAIDs like ibuprofen and naproxen are common and useful, but frequent or heavy use has been linked to kidney strain and, in some cases, sudden kidney injury.</p>
+        <ul>
+          <li>Use the lowest effective dose for the shortest time</li>
+          <li>Ask your pharmacist or doctor about alternatives if you take them often</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">7</span><h3>Don't smoke — and ask for help quitting if you do</h3></div>
+        <p>Smoking raises blood pressure and damages blood vessels, which reduces blood flow to the kidneys and adds risk of kidney disease and kidney cancer.</p>
+        <ul>
+          <li>Your doctor can point you to free quit-smoking support programs</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="step-top"><span class="step-num">8</span><h3>Loop your doctor in before you add anything new</h3></div>
+        <p>This includes every supplement, "natural" remedy, or product you see advertised online — even ones that seem harmless. Some interact with medications or put extra load on the kidneys.</p>
+        <ul>
+          <li>Bring the product label or a screenshot of the ad to your appointment</li>
+          <li>A pharmacist can often answer supplement-interaction questions quickly, even without an appointment</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block seam" id="scams">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How to spot a supplement scam before it spots you</h2>
+        <p>Health misinformation follows a recognizable script. Here's the language regulators consistently flag as a red flag, in plain terms.</p>
+      </div>
+      <div class="flag-grid">
+        <div class="flag-card">
+          <p class="flag-phrase">"All natural miracle cure"</p>
+          <p>No natural ingredient reverses organ damage on its own. Legitimate treatments describe risks and limits — cure-all language is a warning sign, not a selling point.</p>
+        </div>
+        <div class="flag-card">
+          <p class="flag-phrase">"Doctors don't want you to know about this"</p>
+          <p>Genuine medical advances get published and discussed openly. If a product claims to be hidden from the medical establishment, that claim itself is the scam.</p>
+        </div>
+        <div class="flag-card">
+          <p class="flag-phrase">"One product fixes everything"</p>
+          <p>Be skeptical of anything promoted for a long, unrelated list of conditions — real treatments tend to be specific.</p>
+        </div>
+        <div class="flag-card">
+          <p class="flag-phrase">"Results in 30 days or your money back"</p>
+          <p>By law, supplements can't legally be marketed to treat or cure a disease. A bold guarantee doesn't change that — it's designed to lower your guard, not prove anything.</p>
+        </div>
+        <div class="flag-card">
+          <p class="flag-phrase">A dramatic before-and-after story, no data</p>
+          <p>A single testimonial — even an emotional, convincing one — is not evidence. Ask what the actual research shows, not what one video shows.</p>
+        </div>
+        <div class="flag-card">
+          <p class="flag-phrase">"Act now" / limited-time urgency</p>
+          <p>Urgency is a pressure tactic to stop you from checking, comparing, or asking someone else's opinion first. A genuinely good product will still be there tomorrow.</p>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:46px;">
+        <h2>Questions to ask before you buy</h2>
+        <p>A minute of checking here can save you money — and sometimes your health.</p>
+      </div>
+      <ul class="checklist">
+        <li><input type="checkbox" id="q1"><label for="q1"><span>Is there real published research behind this claim, or just a video and a testimonial?</span></label></li>
+        <li><input type="checkbox" id="q2"><label for="q2"><span>What does my doctor or pharmacist think, independent of the ad?</span></label></li>
+        <li><input type="checkbox" id="q3"><label for="q3"><span>Is this sold anywhere besides the company's own checkout page?<span class="sub">A widely trusted product is usually available through more than one retailer.</span></span></label></li>
+        <li><input type="checkbox" id="q4"><label for="q4"><span>Is it a recurring subscription, and do I know exactly how to cancel it?</span></label></li>
+        <li><input type="checkbox" id="q5"><label for="q5"><span>Have I searched the product name plus the word "complaint" or "review"?</span></label></li>
+      </ul>
+
+      <div class="section-head" style="margin-top:46px;">
+        <h2>Already bought something you're not sure about?</h2>
+        <p>No judgment — these ads are built by professionals to be persuasive. Here's what actually helps now.</p>
+      </div>
+      <ul class="checklist">
+        <li><input type="checkbox" id="a1"><label for="a1"><span>Stop taking it and tell your doctor or pharmacist what's in it<span class="sub">Bring the label or a photo — they can flag interactions or concerns.</span></span></label></li>
+        <li><input type="checkbox" id="a2"><label for="a2"><span>Check your card statement for a recurring charge and cancel the subscription directly with the company</span></label></li>
+        <li><input type="checkbox" id="a3"><label for="a3"><span>If a charge was hidden or the product was misrepresented, ask your card provider about a chargeback</span></label></li>
+        <li><input type="checkbox" id="a4"><label for="a4"><span>Report false health claims at <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">reportfraud.ftc.gov</a> and any bad reaction to the <a href="https://www.fda.gov/safety/report-problem-fda" target="_blank" rel="noopener">FDA's MedWatch program</a></span></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block wrap" id="urgent">
+    <div class="urgent">
+      <h3>Get care right away if you notice</h3>
+      <ul>
+        <li>A sudden drop or complete stop in urination</li>
+        <li>Severe swelling along with shortness of breath</li>
+        <li>Chest pain, confusion, or a seizure</li>
+      </ul>
+      <p>Call your doctor immediately or go to the nearest emergency room — these can signal a sudden, serious change in kidney function that needs prompt attention.</p>
+      <p class="small">This is general information, not a diagnosis of your situation.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <h4>Where this guide comes from</h4>
+  <ul>
+    <li>National Kidney Foundation — kidney.org</li>
+    <li>National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) — niddk.nih.gov</li>
+    <li>Federal Trade Commission, Consumer Advice — consumer.ftc.gov</li>
+    <li>U.S. Food and Drug Administration — fda.gov</li>
+  </ul>
+  <p class="fine">This page is for general education only and is not a substitute for care from a qualified health professional. Always talk to your doctor about symptoms, risk factors, medications, or supplements specific to you.</p>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var moon = document.getElementById('iconMoon');
+    var sun = document.getElementById('iconSun');
+    var label = document.getElementById('toggleLabel');
+
+    function applyState(isDark) {
+      root.classList.toggle('dark', isDark);
+      moon.style.display = isDark ? 'none' : 'block';
+      sun.style.display = isDark ? 'block' : 'none';
+      label.textContent = isDark ? 'Light mode' : 'Dark mode';
+    }
+
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyState(prefersDark);
+
+    toggle.addEventListener('click', function () {
+      applyState(!root.classList.contains('dark'));
+    });
+  })();
+</script>
+
+</body>
+</html>
