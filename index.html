@@ -329,6 +329,85 @@
   html.dark .flag-card .flag-phrase { color: var(--aqua); }
   .flag-card p { margin: 6px 0 0; color: var(--ink-soft); font-size: 0.93rem; }
 
+  /* Case study: real ad, decoded */
+  .source-note {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .source-note span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .source-note strong { color: var(--ink); }
+  .ad-grid {
+    display: grid;
+    gap: 14px;
+  }
+  .ad-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    padding: 22px 22px;
+    text-align: left;
+    display: grid;
+    gap: 12px;
+  }
+  .ad-step {
+    flex: none;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--seafoam);
+    color: var(--ocean-deep);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  html.dark .ad-step { color: var(--aqua); }
+  .ad-tag, .fact-tag {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 4px 11px;
+    border-radius: 999px;
+  }
+  .ad-tag { background: var(--seafoam); color: var(--ocean-deep); }
+  html.dark .ad-tag { color: var(--aqua); }
+  .fact-tag { background: linear-gradient(135deg, var(--aqua), var(--ocean)); color: #F2FDFC; }
+  .ad-line {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin: 0;
+  }
+  .ad-divider {
+    border: none;
+    border-top: 1px dashed var(--line);
+    margin: 0;
+  }
+  .fact-line {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
   /* Urgent box */
   .urgent {
     background: linear-gradient(160deg, var(--ocean-deep), var(--ocean));
@@ -398,6 +477,7 @@
       <span class="pill">8-step action plan</span>
       <span class="pill">Warning signs checklist</span>
       <span class="pill">Supplement scam checklist</span>
+      <span class="pill">A real ad, decoded</span>
     </div>
   </section>
 
@@ -538,6 +618,60 @@
         </ul>
       </div>
 
+    </div>
+  </section>
+
+  <section class="block wrap" id="case-study">
+    <div class="section-head">
+      <h2>A real ad, decoded</h2>
+      <p>The general red flags below are easy to nod along to. Here's what they actually look like in the wild, beat by beat.</p>
+    </div>
+    <div class="source-note">
+      <span><strong>Source:</strong>&nbsp;a paid "Sponsored" YouTube Shorts ad for a fermented black garlic + CoQ10 supplement, observed September 2026. Lines are paraphrased, not quoted.</span>
+    </div>
+    <div class="ad-grid">
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">1</span>An influencer says he takes a fermented black garlic supplement every day "for his kidneys."</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">No medical credentials are shown, and none are needed to say a sentence like that on camera. A personal routine isn't evidence — it's the oldest ad format there is, dressed up as a diary.</p>
+      </div>
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">2</span>A "Week 2" bathroom shot implies foamy urine cleared up after starting the supplement.</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">Foamy urine can be harmless (a fast stream, toilet water, concentrated first-morning urine) or a sign of real protein leakage that needs a lab test. A toilet-bowl shot can't tell the difference — and no supplement changes what the underlying test would show.</p>
+      </div>
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">3</span>A 3D kidney animation warns that your "filters are sealing" and your kidneys are "overloaded."</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">That's not medical terminology — it's sound design. Real kidney function is measured with an eGFR blood test and a uACR urine test, not narrated over a stock anatomy clip.</p>
+      </div>
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">4</span>The ad pins the blame on over-the-counter painkillers, then pivots straight to the product.</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">Frequent NSAID use <em>is</em> a genuine, well-documented kidney risk (see step 6 in the action plan above). The ad borrows a real concern and answers it with an unrelated garlic supplement, instead of the actual advice: lowest effective dose, and ask a pharmacist.</p>
+      </div>
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">5</span>The reveal: a "Fermented Black Garlic Extract + CoQ10 Ubiquinol" softgel, labeled a "Daily Cardiovascular Support Formula."</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">Notice the mismatch — the entire ad is about kidneys, but the product's own label says cardiovascular support. That gap is a tell: the fear-based story was built around whatever performs best in ads, not around what the product was formulated or studied for.</p>
+      </div>
+      <div class="ad-card">
+        <span class="ad-tag">What the ad showed</span>
+        <p class="ad-line"><span class="ad-step">6</span>The landing page shows a checklist comparing itself to "Other Brands," plus a "Start Your Protocol Today" button and a 90-day guarantee.</p>
+        <hr class="ad-divider">
+        <span class="fact-tag">What's actually true</span>
+        <p class="fact-line">A self-drawn comparison chart and a bold guarantee are persuasion design, not clinical proof — and a real kidney "protocol" comes from a doctor, not a checkout page. Run it through the five questions below before it runs you through checkout.</p>
+      </div>
     </div>
   </section>
 
